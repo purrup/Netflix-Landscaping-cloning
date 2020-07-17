@@ -311,26 +311,35 @@ section {
   position: relative;
   outline: none;
   cursor: pointer;
-  height: 3rem;
-  display: -ms-grid;
-  display: grid;
-  display: -webkit-grid;
-  -ms-grid-columns: 90% 10%;
-      grid-template-columns: 90% 10%;
-  -webkit-grid-template-columns: 90% 10%;
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-align-items: center;
-  padding: 0 0.8rem;
 }
 
 .questions-container .questions-list details summary::-webkit-details-marker {
   display: none;
 }
 
+.questions-container .questions-list details summary :first-child {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
 .questions-container .questions-list details summary .material-icons {
   font-size: 1.5em;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
 }
 
 .questions-container .questions-list details[open] {
@@ -480,7 +489,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .landscape .landscape-content .our-story-card {
     width: 90%;
   }
@@ -509,6 +518,18 @@ footer p {
   .questions-container > :nth-child(1) {
     font-size: 2rem;
     padding-top: 1rem;
+  }
+  .questions-container .questions-list details summary {
+    display: -ms-grid;
+    display: grid;
+    display: -webkit-grid;
+    -ms-grid-columns: 90% 10%;
+        grid-template-columns: 90% 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-grid-template-columns: 90% 10%;
+    -webkit-align-items: center;
   }
   .questions-container .questions-list details summary :nth-child(1) {
     font-size: 1.1rem;
