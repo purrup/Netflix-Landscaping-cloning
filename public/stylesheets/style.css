@@ -86,7 +86,7 @@ section {
   position: relative;
   -ms-grid-row-align: center;
       align-self: center;
-  width: 100%;
+  width: 90%;
   max-height: 65px;
   display: -ms-grid;
   display: grid;
@@ -237,11 +237,14 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-item-align: center;
       align-self: center;
   height: auto;
   width: 60%;
-  max-width: 950px;
+  max-width: 860px;
   z-index: 2;
   color: white;
   text-align: center;

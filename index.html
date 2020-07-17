@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Netflix台灣讓您在線上觀賞節目與電影</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -30,7 +31,7 @@
       </div>
     </div>
   </section>
-  <section class="feature tv feature-container">
+  <section class="feature tv feature-container" data-aos="fade-left">
     <div class="description">
       <b>在電視上觀賞。</b>
       <p>在智慧型電視、Playstation、Xbox、Chromecast、Apple TV、藍光播放器等多種裝置上觀賞。</p>
@@ -38,7 +39,7 @@
     <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
   </section>
 
-  <section class="feature download feature-container">
+  <section class="feature download feature-container" data-aos="fade-right">
     <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="download">
     <div class="description">
       <b>下載您的節目以便離線觀賞。</b>
@@ -46,7 +47,7 @@
     </div>
   </section>
   
-  <section class="feature everywhere feature-container">
+  <section class="feature everywhere feature-container"  data-aos="fade-left">
     <div class="description">
       <b>隨處都能觀賞。</b>
       <p>隨您在手機、平板電腦、筆記型電腦和電視上串流不限時數的電影與節目，無額外費用。</p>
@@ -54,7 +55,7 @@
     <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
   </section>
 
-  <section class="questions">
+  <section class="questions" data-aos="zoom-out">
     <div class="questions-container">
       <b>常見問題解答</b>
       <div class="questions-list">
@@ -172,6 +173,13 @@
       <p>Netflix 台灣</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200, 
+      duration: 1000,
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 </html>
