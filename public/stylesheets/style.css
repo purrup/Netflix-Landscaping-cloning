@@ -314,11 +314,14 @@ section {
   height: 3rem;
   display: -ms-grid;
   display: grid;
+  display: -webkit-grid;
   -ms-grid-columns: 90% 10%;
       grid-template-columns: 90% 10%;
+  -webkit-grid-template-columns: 90% 10%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-align-items: center;
   padding: 0 0.8rem;
 }
 

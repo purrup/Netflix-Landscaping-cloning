@@ -242,8 +242,11 @@ section {
         cursor: pointer;
         height: 3rem;
         display: grid;
+        display: -webkit-grid;
         grid-template-columns: 90% 10%;
+        -webkit-grid-template-columns: 90% 10%;
         align-items: center;
+        -webkit-align-items: center;
         padding: 0 0.8rem;
         //移除<details>預設箭頭符號
         &::-webkit-details-marker {
