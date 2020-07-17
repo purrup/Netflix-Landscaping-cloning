@@ -387,7 +387,7 @@ footer {
     }
     .subscribe {
       button {
-        width: 40%;
+        width: 45%;
         i {
           font-size: 1rem;
         }
@@ -418,7 +418,7 @@ footer {
           }
           :nth-child(2) {
             font-size: 1.3rem;
-            transform: translateX(-10px);
+            // transform: translateX(-10px);
           }
           ~ div span {
             font-size: 1rem;
