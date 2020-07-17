@@ -382,15 +382,6 @@ section {
   }
 }
 
-.questions-container .questions-list details .close div {
-  opacity: 0;
-  height: 0;
-}
-
-.questions-container .questions-list details:not([open]) summary ~ * {
-  animation: drop 1s ease-in-out reverse;
-}
-
 footer {
   max-width: 70%;
   margin: 1rem auto;
@@ -449,5 +440,97 @@ footer .select-wrapper select {
 
 footer p {
   font-size: 0.7em;
+}
+
+@media screen and (max-width: 768px) {
+  .feature-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .feature-container > img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .feature-container > .description {
+    text-align: center;
+  }
+  .feature-container > .description b {
+    margin: auto;
+    font-size: 2rem;
+  }
+  .subscribe {
+    display: block;
+  }
+  .subscribe button {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  .landscape .landscape-content .our-story-card > :nth-child(4) {
+    padding-top: 3rem;
+  }
+  .questions-container .subscribe {
+    display: block;
+    text-align: center;
+  }
+  .questions-container .subscribe button {
+    width: 50%;
+    padding: 0.5rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-top: 1rem;
+  }
+  .questions-container > p {
+    padding-top: 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .landscape .landscape-content .our-story-card :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .landscape .landscape-content .our-story-card :nth-child(2) {
+    font-size: 1rem;
+  }
+  .landscape .landscape-content .our-story-card .subscribe button {
+    width: 80%;
+  }
+  .feature-container .description :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .feature-container .description :nth-child(2) {
+    font-size: 1rem;
+  }
+  .questions-container > :nth-child(1) {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .questions-container .questions-list details summary :nth-child(1) {
+    font-size: 1.1rem;
+    width: 70%;
+  }
+  .questions-container .questions-list details summary :nth-child(2) {
+    font-size: 1.3rem;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  .questions-container .questions-list details summary ~ div span {
+    font-size: 1rem;
+  }
+  .questions-container .subscribe button {
+    width: 80%;
+  }
+  footer .footer-container {
+    text-align: center;
+  }
+  footer .footer-links {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
