@@ -412,13 +412,16 @@ footer {
     .questions-list {
       details {
         summary {
+          display: grid;
+          grid-template-columns: 85% 15%;
+          align-items: center;
           :nth-child(1) {
             font-size: 1.1rem;
             width: 70%;
           }
           :nth-child(2) {
             font-size: 1.3rem;
-            // transform: translateX(-10px);
+            transform: translateX(0);
           }
           ~ div span {
             font-size: 1rem;
