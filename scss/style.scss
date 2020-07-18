@@ -237,25 +237,17 @@ section {
       margin-bottom: 8px;
       cursor: pointer;
       summary {
-        position: relative;
+        // position: relative;
         outline:none;
         cursor: pointer;
         height: 3em;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        padding: 0 1.5rem;
+        display: grid;
+        grid-template-columns: 95% 5%;
         align-items: center;
         //移除<details>預設箭頭符號
         &::-webkit-details-marker {
           display: none;
-        }
-        // Question
-        :first-child {
-          transform: translateX(20px);
-        }
-        .material-icons {
-          font-size: 1.5em;
-          transform: translateX(-20px);
         }
       }
       &[open] {
@@ -413,11 +405,8 @@ footer {
       details {
         summary {
           display: grid;
-          display: -webkit-grid;
           grid-template-columns: 90% 10%;
           align-items: center;
-          -webkit-grid-template-columns: 90% 10%;
-          -webkit-align-items: center;
           :nth-child(1) {
             font-size: 1.1rem;
           }
