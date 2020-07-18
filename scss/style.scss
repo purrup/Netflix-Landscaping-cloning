@@ -403,19 +403,18 @@ footer {
     .questions-list {
       details {
         summary {
-          // display: grid;
-          // grid-template-columns: 90% 10%;
-          // align-items: center;
           display: block;
+          position: relative;
           :nth-child(1) {
-            font-size: 1.3rem;
+            font-size: 1.1rem;
             position: absolute;
-            transform: translateY(50%);
+            top: 30%;
           }
           :nth-child(2) {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             position: absolute;
-            transform: translateX(250px) translateY(100%);
+            top: 30%;
+            left: 85%;
           }
           ~ div span {
             font-size: 1rem;

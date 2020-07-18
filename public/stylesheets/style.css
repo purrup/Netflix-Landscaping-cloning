@@ -504,18 +504,18 @@ footer p {
   }
   .questions-container .questions-list details summary {
     display: block;
+    position: relative;
   }
   .questions-container .questions-list details summary :nth-child(1) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     position: absolute;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    top: 30%;
   }
   .questions-container .questions-list details summary :nth-child(2) {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     position: absolute;
-    -webkit-transform: translateX(250px) translateY(100%);
-            transform: translateX(250px) translateY(100%);
+    top: 30%;
+    left: 85%;
   }
   .questions-container .questions-list details summary ~ div span {
     font-size: 1rem;
