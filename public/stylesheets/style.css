@@ -523,6 +523,9 @@ footer p {
   .questions-container .subscribe button {
     width: 40%;
   }
+  footer {
+    padding-bottom: 2rem;
+  }
   footer .footer-container {
     text-align: center;
   }
@@ -530,6 +533,9 @@ footer p {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     text-align: center;
+  }
+  footer .select-wrapper .language-picker select {
+    -webkit-appearance: initial;
   }
 }
 /*# sourceMappingURL=style.css.map */
