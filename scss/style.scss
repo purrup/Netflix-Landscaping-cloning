@@ -237,7 +237,6 @@ section {
       margin-bottom: 8px;
       cursor: pointer;
       summary {
-        // position: relative;
         outline:none;
         cursor: pointer;
         height: 3em;
@@ -368,7 +367,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .landscape .landscape-content .our-story-card {
     width: 90%;
     >:nth-child(1) {
@@ -404,14 +403,19 @@ footer {
     .questions-list {
       details {
         summary {
-          display: grid;
-          grid-template-columns: 90% 10%;
-          align-items: center;
+          // display: grid;
+          // grid-template-columns: 90% 10%;
+          // align-items: center;
+          display: block;
           :nth-child(1) {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
+            position: absolute;
+            transform: translateY(50%);
           }
           :nth-child(2) {
             font-size: 1.3rem;
+            position: absolute;
+            transform: translateX(250px) translateY(100%);
           }
           ~ div span {
             font-size: 1rem;
